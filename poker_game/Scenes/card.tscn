@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfak4uy6vp46x"]
+
+[ext_resource type="Texture2D" uid="uid://dsq4t1sr7s28d" path="res://Assets/Aseprite/card.png" id="1_piyns"]
+
+[node name="Card" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_piyns")

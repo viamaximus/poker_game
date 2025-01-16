@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7rf66o3p7lho"]
+
+[ext_resource type="PackedScene" uid="uid://cfak4uy6vp46x" path="res://Scenes/card.tscn" id="1_r1hgg"]
+
+[node name="Game Board" type="CanvasLayer"]
+
+[node name="Deck" type="Node" parent="."]
+
+[node name="Vis_elements" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Deck_pile" type="Marker2D" parent="Vis_elements"]
+position = Vector2(1718, 878)
+
+[node name="ColorRect" type="ColorRect" parent="Vis_elements"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.607843, 0.372549, 1)
+
+[node name="Card" parent="." instance=ExtResource("1_r1hgg")]
+position = Vector2(1719, 859)
+scale = Vector2(10, 10)
